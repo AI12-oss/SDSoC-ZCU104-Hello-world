@@ -1,0 +1,40 @@
+14:11:44 **** Incremental Build of configuration Release for project helloworld ****
+make pre-build main-build 
+sdsoc_make_clean Release
+' '
+'Building file: ../src/printHelloWorld.cpp'
+'Invoking: SDS++ Compiler'
+sds++ -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/printHelloWorld.o" -MMD -MP -MF"src/printHelloWorld.d" -MT"src/printHelloWorld.o" -o "src/printHelloWorld.o" "../src/printHelloWorld.cpp" -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf "zcu104"
+Analyzing source for RTL template usage
+Create data motion intermediate representation
+
+D:\xilinx\SDSoC_IDE\workspace\firstSDxproj\helloworld\Release>D:\xilinx\SDSoC_IDE\SDx\2018.3\llvm-clang\win64\llvm\bin\clang.exe -I../src -Wall -fmessage-length=0 -MMD -MP -D __SDSCC__ -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -I D:/xilinx/SDSoC_IDE/SDx/2018.3/target/aarch64-linux/include -D HLS_NO_XIL_FPO_LIB -I D:/xilinx/SDSoC_IDE/Vivado/2018.3/include -ID:/xilinx/SDSoC_IDE/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1 -ID:/xilinx/SDSoC_IDE/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/aarch64-linux-gnu -ID:/xilinx/SDSoC_IDE/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include/c++/7.3.1/backward -ID:/xilinx/SDSoC_IDE/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include -ID:/xilinx/SDSoC_IDE/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.3.1/include-fixed -ID:/xilinx/SDSoC_IDE/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/include -ID:/xilinx/SDSoC_IDE/SDK/2018.3/gnu/aarch64/nt/aarch64-linux/aarch64-linux-gnu/libc/usr/include -std=c++11 -emit-llvm -S D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/src/printHelloWorld.cpp -o D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/.llvm/src/printHelloWorld.s 
+
+D:\xilinx\SDSoC_IDE\workspace\firstSDxproj\helloworld\Release>exit /b 0 
+Compiling D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/src/printHelloWorld.cpp
+sds++ log file saved as D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/reports/sds_printHelloWorld.log
+
+'Finished building: ../src/printHelloWorld.cpp'
+' '
+'Building target: helloworld.elf'
+'Invoking: SDS++ Linker'
+sds++ --remote_ip_cache D:/xilinx/SDSoC_IDE/workspace/ip_cache -o "helloworld.elf"  ./src/printHelloWorld.o    -dmclkid 1  -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf "zcu104"
+Analyzing object files
+... D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/src/printHelloWorld.o
+Using prebuilt hardware
+Skipping block diagram (BD), address map, port information and device registration for partition 0
+Prepare hardware access API functions
+Create accelerator stub functions
+Compile hardware access API functions
+Compile accelerator stub functions
+Enable generation of boot files
+Compile hardware access API functions
+Link application ELF file
+SD card folder created D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/sd_card
+sds++ log file saved as D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/reports/sds.log
+
+'Finished building target: helloworld.elf'
+' '
+
+14:12:17 Build Finished (took 33s.286ms)
+

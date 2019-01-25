@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdsproject:SDSProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" name="helloworld" location="D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld" platform="D:/xilinx/SDSoC_IDE/SDx/2018.3/platforms/zcu104/zcu104.xpfm" platformUID="xilinx.com:zcu104:zcu104:1.0" systemProject="helloworld_system" sysConfig="a53_linux" runtime="C/C++" cpu="a53_linux" cpuInstance="" os="linux" ConfigType="Debug">
+  <configuration name="Debug" id="com.xilinx.sdsoc.managedbuild.project.debug.846454374" dirty="true">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="1" enableHwSwTrace="false" traceApplication="false"/>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdsoc.managedbuild.project.release.2128539033">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="1" enableHwSwTrace="false" traceApplication="false"/>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="1" enableHwSwTrace="false" traceApplication="false"/>
+  </configuration>
+</sdsproject:SDSProject>

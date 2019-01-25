@@ -1,0 +1,8 @@
+OUTPUT=helloworld.elf
+.PHONY: relink clean
+
+relink:
+	cp helloworld.elf ${OUTPUT}
+
+clean:
+	rm -f ${OUTPUT}

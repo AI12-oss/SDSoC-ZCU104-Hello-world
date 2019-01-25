@@ -1,0 +1,39 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:39:10 MST 2018
+# Start time    : Fri Jan 25 14:11:54 +0800 2019
+# Command line  : sds++ --remote_ip_cache D:/xilinx/SDSoC_IDE/workspace/ip_cache -o helloworld.elf ./src/printHelloWorld.o -dmclkid 1 -sds-sys-config a53_linux -sds-proc a53_linux -sds-pf zcu104
+# Log file      : D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/reports/sds.log
+# Journal file  : D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/reports/sds.jou
+# Report file   : D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+Libraries: 
+Library Paths {}
+Analyzing object files
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/src/printHelloWorld.o D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/src/printHelloWorld.o D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/src/printHelloWorld.o D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/.data/printHelloWorld.o.xml
+D:/xilinx/SDSoC_IDE/SDx/2018.3/bin/build_xd_ip_db -ip_search 0  -sds-pf D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/.Xil/zcu104.hpfm    -o D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/.cdb/xd_ip_db.xml  
+INFO: Using user-defined path for XILINX_XD environment variable D:/xilinx/SDSoC_IDE/SDx/2018.3
+Using prebuilt hardware
+Skipping block diagram (BD), address map, port information and device registration for partition 0
+Prepare hardware access API functions
+Create accelerator stub functions
+Compile hardware access API functions
+aarch64-linux-gnu-gcc         -I D:/xilinx/SDSoC_IDE/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I D:/xilinx/SDSoC_IDE/Vivado/2018.3/include -c  D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++        -I D:/xilinx/SDSoC_IDE/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I D:/xilinx/SDSoC_IDE/Vivado/2018.3/include -c  D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/libxlnk_stub.a D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/portinfo.o D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/cf_stub.o
+Compile accelerator stub functions
+aarch64-linux-gnu-ar crs D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/libhelloworld.a D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/portinfo.o D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/cf_stub.o 
+Enable generation of boot files
+Compile hardware access API functions
+aarch64-linux-gnu-gcc         -I D:/xilinx/SDSoC_IDE/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I D:/xilinx/SDSoC_IDE/Vivado/2018.3/include -c  D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++        -I D:/xilinx/SDSoC_IDE/SDx/2018.3/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I D:/xilinx/SDSoC_IDE/Vivado/2018.3/include -c  D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/libxlnk_stub.a D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/portinfo.o D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/cf_stub.o
+aarch64-linux-gnu-ar crs D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/libhelloworld.a D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/portinfo.o D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/cf_stub.o 
+Link application ELF file
+aarch64-linux-gnu-g++     D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/src/printHelloWorld.o D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/portinfo.o     -LD:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -LD:/xilinx/SDSoC_IDE/SDx/2018.3/target/aarch64-linux/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/helloworld.elf 
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/swstubs/helloworld.elf
+sds++ log file saved as D:/xilinx/SDSoC_IDE/workspace/firstSDxproj/helloworld/Release/_sds/reports/sds.log
+sds++ completed at Fri Jan 25 14:12:17 +0800 2019
